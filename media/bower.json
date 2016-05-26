@@ -1,0 +1,13 @@
+{
+  "name": "media",
+  "authors": [
+    "Sean McCollum <anincrediblyshortname@gmail.com>"
+  ],
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "require": "http://requirejs.org/docs/release/2.1.22/minified/require.js",
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6"
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+project_root=$(cd `dirname ${BASH_SOURCE[0]}`; cd ..; pwd)
+$project_root/scripts/js/dev.js "$@"

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5cbets</title>
+    <meta name="google-signin-client_id" content="{{GOOGLE_SIGN_IN_CLIENT_ID}}">
+    <script>
+    window.GOOGLE_SIGN_IN_CLIENT_ID = "{{GOOGLE_SIGN_IN_CLIENT_ID}}";
+    </script>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <script type="text/javascript" src="/media/js/require-config.js"></script>
+    <script src="/media/vendor/require.js" data-main="/media/js/main.js"></script>
+    <script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+    }
+    </script>
+</head>
+<body>
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+    <div id="content">Loading...</div>
+</body>
+</html>
